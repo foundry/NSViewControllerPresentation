@@ -9,6 +9,6 @@ Examples provided for the following methods:
     – presentViewController:animator:  
 
 
-For the last example, a
+For the last example, a custom object is used conforming to the  `NSViewControllerPresentationAnimator` protocol.
 
 
