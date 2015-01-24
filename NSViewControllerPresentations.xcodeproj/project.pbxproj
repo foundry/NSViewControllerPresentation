@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB937ECA1A7429BE00C8391F /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB937EC91A7429BE00C8391F /* MyView.m */; };
 		ABC8ACD81A71A31F00B10301 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC8ACD71A71A31F00B10301 /* AppDelegate.m */; };
 		ABC8ACDA1A71A31F00B10301 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC8ACD91A71A31F00B10301 /* main.m */; };
 		ABC8ACDD1A71A31F00B10301 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC8ACDC1A71A31F00B10301 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB937EC81A7429BE00C8391F /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		AB937EC91A7429BE00C8391F /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		ABC8ACD11A71A31F00B10301 /* NSViewControllerPresentations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSViewControllerPresentations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC8ACD51A71A31F00B10301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC8ACD61A71A31F00B10301 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 				ABC8ACD71A71A31F00B10301 /* AppDelegate.m */,
 				ABC8ACDB1A71A31F00B10301 /* ViewController.h */,
 				ABC8ACDC1A71A31F00B10301 /* ViewController.m */,
+				AB937EC81A7429BE00C8391F /* MyView.h */,
+				AB937EC91A7429BE00C8391F /* MyView.m */,
 				ABC8ACDE1A71A31F00B10301 /* Images.xcassets */,
 				ABC8ACE01A71A31F00B10301 /* Main.storyboard */,
 				ABC8ACD41A71A31F00B10301 /* Supporting Files */,
@@ -161,6 +166,7 @@
 			files = (
 				ABC8ACFE1A71A99C00B10301 /* MyCustomAnimator.m in Sources */,
 				ABC8ACDD1A71A31F00B10301 /* ViewController.m in Sources */,
+				AB937ECA1A7429BE00C8391F /* MyView.m in Sources */,
 				ABC8ACDA1A71A31F00B10301 /* main.m in Sources */,
 				ABC8ACFA1A71A44F00B10301 /* MyViewController.m in Sources */,
 				ABC8ACD81A71A31F00B10301 /* AppDelegate.m in Sources */,
@@ -298,6 +304,7 @@
 				ABC8ACF31A71A31F00B10301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

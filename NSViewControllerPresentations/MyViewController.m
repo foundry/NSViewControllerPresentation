@@ -17,8 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Presented ViewController";
-    // Do view setup here.
 }
+
+
 - (IBAction)dismiss:(id)sender {
     [self.presentingViewController dismissViewController:self];
 }

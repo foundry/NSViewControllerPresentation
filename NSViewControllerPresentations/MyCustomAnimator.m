@@ -34,11 +34,11 @@
     CGRect frame = NSRectToCGRect(bottomVC.view.frame);
     frame = CGRectInset(frame, 40, 40);
     [topVC.view setFrame:NSRectFromCGRect(frame)];
-    topVC.view.layer.backgroundColor = [NSColor redColor].CGColor;
+    topVC.view.layer.backgroundColor = [NSColor grayColor].CGColor;
     
     // Do some CoreAnimation stuff to present view
     [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
-        context.duration = 2;
+        context.duration = 0.5;
         topVC.view.animator.alphaValue = 1;
         //[topVC.view.animator setFrame:bottomVC.view.frame];
 
@@ -61,7 +61,7 @@
     
     // Do some CoreAnimation stuff to present view
     [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
-        context.duration = 2;
+        context.duration = 0.5;
         topVC.view.animator.alphaValue = 0;
     } completionHandler:^{
         [topVC.view removeFromSuperview];
