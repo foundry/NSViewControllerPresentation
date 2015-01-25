@@ -40,11 +40,7 @@
     [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
         context.duration = 0.5;
         topVC.view.animator.alphaValue = 1;
-        //[topVC.view.animator setFrame:bottomVC.view.frame];
-
     } completionHandler:nil];
-    
-    
     
 }
 
