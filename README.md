@@ -1,6 +1,6 @@
 # NSViewControllerPresentation
 
-A small demo of NSViewController's present and dismiss methods, including custom NSViewControllerPresentationAnimator object  
+A small demo of NSViewController's present and dismiss methods, including custom `NSViewControllerPresentationAnimator` object  
   
 Examples provided for the following methods:  
   
