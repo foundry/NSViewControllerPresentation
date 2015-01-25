@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB8965801A7567DB00FF9F1E /* MyCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = AB89657F1A7567DB00FF9F1E /* MyCustomSegue.m */; };
+		AB8965831A75683C00FF9F1E /* MyCustomSwiftSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8965821A75683C00FF9F1E /* MyCustomSwiftSegue.swift */; };
+		AB8965851A7568F100FF9F1E /* MyCustomSwiftAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8965841A7568F100FF9F1E /* MyCustomSwiftAnimator.swift */; };
 		AB937ECA1A7429BE00C8391F /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB937EC91A7429BE00C8391F /* MyView.m */; };
 		ABC8ACD81A71A31F00B10301 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC8ACD71A71A31F00B10301 /* AppDelegate.m */; };
 		ABC8ACDA1A71A31F00B10301 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC8ACD91A71A31F00B10301 /* main.m */; };
@@ -19,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB89657E1A7567DB00FF9F1E /* MyCustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomSegue.h; sourceTree = "<group>"; };
+		AB89657F1A7567DB00FF9F1E /* MyCustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomSegue.m; sourceTree = "<group>"; };
+		AB8965811A75683C00FF9F1E /* NSViewControllerPresentations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSViewControllerPresentations-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB8965821A75683C00FF9F1E /* MyCustomSwiftSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomSwiftSegue.swift; sourceTree = "<group>"; };
+		AB8965841A7568F100FF9F1E /* MyCustomSwiftAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomSwiftAnimator.swift; sourceTree = "<group>"; };
 		AB937EC81A7429BE00C8391F /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		AB937EC91A7429BE00C8391F /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		ABC8ACD11A71A31F00B10301 /* NSViewControllerPresentations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSViewControllerPresentations.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +56,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB89658C1A7582BA00FF9F1E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB937EC81A7429BE00C8391F /* MyView.h */,
+				AB937EC91A7429BE00C8391F /* MyView.m */,
+				ABC8ACF71A71A44F00B10301 /* MyViewController.h */,
+				ABC8ACF81A71A44F00B10301 /* MyViewController.m */,
+				ABC8ACF91A71A44F00B10301 /* MyViewController.xib */,
+				ABC8ACDB1A71A31F00B10301 /* ViewController.h */,
+				ABC8ACDC1A71A31F00B10301 /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AB89658D1A7582E100FF9F1E /* ObjC segues and animators */ = {
+			isa = PBXGroup;
+			children = (
+				AB89657E1A7567DB00FF9F1E /* MyCustomSegue.h */,
+				AB89657F1A7567DB00FF9F1E /* MyCustomSegue.m */,
+				ABC8ACFC1A71A99C00B10301 /* MyCustomAnimator.h */,
+				ABC8ACFD1A71A99C00B10301 /* MyCustomAnimator.m */,
+			);
+			name = "ObjC segues and animators";
+			sourceTree = "<group>";
+		};
+		AB89658E1A7582F000FF9F1E /* Swift segues and animators */ = {
+			isa = PBXGroup;
+			children = (
+				AB8965821A75683C00FF9F1E /* MyCustomSwiftSegue.swift */,
+				AB8965841A7568F100FF9F1E /* MyCustomSwiftAnimator.swift */,
+			);
+			name = "Swift segues and animators";
+			sourceTree = "<group>";
+		};
 		ABC8ACC81A71A31F00B10301 = {
 			isa = PBXGroup;
 			children = (
@@ -67,20 +109,12 @@
 		ABC8ACD31A71A31F00B10301 /* NSViewControllerPresentations */ = {
 			isa = PBXGroup;
 			children = (
-				ABC8ACD61A71A31F00B10301 /* AppDelegate.h */,
-				ABC8ACF71A71A44F00B10301 /* MyViewController.h */,
-				ABC8ACF81A71A44F00B10301 /* MyViewController.m */,
-				ABC8ACF91A71A44F00B10301 /* MyViewController.xib */,
-				ABC8ACD71A71A31F00B10301 /* AppDelegate.m */,
-				ABC8ACDB1A71A31F00B10301 /* ViewController.h */,
-				ABC8ACDC1A71A31F00B10301 /* ViewController.m */,
-				AB937EC81A7429BE00C8391F /* MyView.h */,
-				AB937EC91A7429BE00C8391F /* MyView.m */,
+				AB89658E1A7582F000FF9F1E /* Swift segues and animators */,
+				AB89658D1A7582E100FF9F1E /* ObjC segues and animators */,
+				AB89658C1A7582BA00FF9F1E /* ViewControllers */,
 				ABC8ACDE1A71A31F00B10301 /* Images.xcassets */,
 				ABC8ACE01A71A31F00B10301 /* Main.storyboard */,
 				ABC8ACD41A71A31F00B10301 /* Supporting Files */,
-				ABC8ACFC1A71A99C00B10301 /* MyCustomAnimator.h */,
-				ABC8ACFD1A71A99C00B10301 /* MyCustomAnimator.m */,
 			);
 			path = NSViewControllerPresentations;
 			sourceTree = "<group>";
@@ -88,6 +122,9 @@
 		ABC8ACD41A71A31F00B10301 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AB8965811A75683C00FF9F1E /* NSViewControllerPresentations-Bridging-Header.h */,
+				ABC8ACD61A71A31F00B10301 /* AppDelegate.h */,
+				ABC8ACD71A71A31F00B10301 /* AppDelegate.m */,
 				ABC8ACD51A71A31F00B10301 /* Info.plist */,
 				ABC8ACD91A71A31F00B10301 /* main.m */,
 			);
@@ -166,7 +203,10 @@
 			files = (
 				ABC8ACFE1A71A99C00B10301 /* MyCustomAnimator.m in Sources */,
 				ABC8ACDD1A71A31F00B10301 /* ViewController.m in Sources */,
+				AB8965831A75683C00FF9F1E /* MyCustomSwiftSegue.swift in Sources */,
+				AB8965851A7568F100FF9F1E /* MyCustomSwiftAnimator.swift in Sources */,
 				AB937ECA1A7429BE00C8391F /* MyView.m in Sources */,
+				AB8965801A7567DB00FF9F1E /* MyCustomSegue.m in Sources */,
 				ABC8ACDA1A71A31F00B10301 /* main.m in Sources */,
 				ABC8ACFA1A71A44F00B10301 /* MyViewController.m in Sources */,
 				ABC8ACD81A71A31F00B10301 /* AppDelegate.m in Sources */,
@@ -267,10 +307,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = NSViewControllerPresentations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = NSViewControllerPresentations;
+				SWIFT_OBJC_BRIDGING_HEADER = "NSViewControllerPresentations/NSViewControllerPresentations-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -278,10 +321,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = NSViewControllerPresentations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = NSViewControllerPresentations;
+				SWIFT_OBJC_BRIDGING_HEADER = "NSViewControllerPresentations/NSViewControllerPresentations-Bridging-Header.h";
 			};
 			name = Release;
 		};

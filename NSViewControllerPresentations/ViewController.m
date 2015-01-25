@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MyViewController.h"
 #import "MyCustomAnimator.h"
+#import "NSViewControllerPresentations-Swift.h"
 
 @implementation ViewController
 
@@ -38,8 +39,9 @@
 }
 - (IBAction)presentWithAnimator:(NSButton *)sender {
     id animator = [[MyCustomAnimator alloc] init];
+    id animator2 = [[MyCustomSwiftAnimator alloc] init];
     NSViewController* vc = [[MyViewController alloc] initWithNibName:nil bundle:nil];
-    [self presentViewController:vc animator:animator];
+    [self presentViewController:vc animator:animator2];
 
 }
 
