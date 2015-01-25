@@ -15,8 +15,8 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JnA-0z-jll">
-                    <rect key="frame" x="196" y="207" width="89" height="32"/>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JnA-0z-jll">
+                    <rect key="frame" x="196" y="163" width="89" height="32"/>
                     <buttonCell key="cell" type="push" title="Dismiss" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8xt-QP-3Fj">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -30,6 +30,7 @@
                 <constraint firstAttribute="centerY" secondItem="JnA-0z-jll" secondAttribute="centerY" id="IwK-bv-OK9"/>
                 <constraint firstAttribute="centerX" secondItem="JnA-0z-jll" secondAttribute="centerX" id="w2f-Bc-5od"/>
             </constraints>
+            <point key="canvasLocation" x="259" y="244"/>
         </customView>
     </objects>
 </document>

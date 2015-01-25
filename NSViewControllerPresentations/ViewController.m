@@ -39,9 +39,8 @@
 }
 - (IBAction)presentWithAnimator:(NSButton *)sender {
     id animator = [[MyCustomAnimator alloc] init];
-    id animator2 = [[MyCustomSwiftAnimator alloc] init];
     NSViewController* vc = [[MyViewController alloc] initWithNibName:nil bundle:nil];
-    [self presentViewController:vc animator:animator2];
+    [self presentViewController:vc animator:animator];
 
 }
 

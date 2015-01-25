@@ -22,7 +22,7 @@
 
 - (IBAction)dismiss:(id)sender {
     if (self.presentingViewController) {
-    [self.presentingViewController dismissViewController:self];
+        [self.presentingViewController dismissViewController:self];
     } else {
         //for the 'show' transition
         [self.view.window close];
