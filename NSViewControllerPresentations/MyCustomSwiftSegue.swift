@@ -31,8 +31,8 @@ class MyCustomSwiftSegue: NSStoryboardSegue {
     
     override func perform() {
         let animator = MyCustomSwiftAnimator()
-        let sourceVC  = self.sourceController as NSViewController
-        let destVC = self.destinationController as NSViewController
+        let sourceVC  = self.sourceController as! NSViewController
+        let destVC = self.destinationController as! NSViewController
         sourceVC.presentViewController(destVC, animator: animator)
     }
 }
