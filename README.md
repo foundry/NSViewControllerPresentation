@@ -16,7 +16,7 @@ For comparison, behaviour is also be provided using NSStoryboardSegues:
 
 For the animator/custom example, a custom `NSStoryboardSegue` subclass is provided, alongside a custom object conforming to the  `NSViewControllerPresentationAnimator` protocol.  
 
-These are shown in Objective-C and Swift versions for comparison. Check the comment in `MyCustomSwiftSegue` - there's a Swift-only  _gotcha_ waiting to trip you up (see also this [Stack Overflow question]( http://stackoverflow.com/questions/26876609/nsstoryboardsegue-sample-code-yosemite-storyboard?lq=1 question)).
+These are shown in Objective-C and Swift versions for comparison. ~~Check the comment in `MyCustomSwiftSegue` - there's a Swift-only  _gotcha_ waiting to trip you up~~ (see also this [Stack Overflow question]( http://stackoverflow.com/questions/26876609/nsstoryboardsegue-sample-code-yosemite-storyboard?lq=1 question)).
 
 
 ![](http://i.stack.imgur.com/JuGRB.png)
