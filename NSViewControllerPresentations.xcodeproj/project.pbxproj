@@ -157,7 +157,9 @@
 		ABC8ACC91A71A31F00B10301 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = com.ellipsis;
 				TargetAttributes = {
 					ABC8ACD01A71A31F00B10301 = {
@@ -247,6 +249,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -311,6 +314,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = NSViewControllerPresentations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ellipsis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = NSViewControllerPresentations;
 				SWIFT_OBJC_BRIDGING_HEADER = "NSViewControllerPresentations/NSViewControllerPresentations-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -325,6 +329,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = NSViewControllerPresentations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ellipsis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = NSViewControllerPresentations;
 				SWIFT_OBJC_BRIDGING_HEADER = "NSViewControllerPresentations/NSViewControllerPresentations-Bridging-Header.h";
 			};
