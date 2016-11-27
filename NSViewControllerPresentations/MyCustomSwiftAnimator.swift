@@ -12,17 +12,17 @@ import Cocoa
 
 class MyCustomSwiftAnimator: NSObject, NSViewControllerPresentationAnimator {
     
-    @objc func  animatePresentationOfViewController(viewController: NSViewController, fromViewController: NSViewController) {
+    @objc func  animatePresentation(of viewController: NSViewController, from fromViewController: NSViewController) {
         let bottomVC = fromViewController
         let topVC = viewController
         topVC.view.wantsLayer = true
-        topVC.view.layerContentsRedrawPolicy = .OnSetNeedsDisplay
+        topVC.view.layerContentsRedrawPolicy = .onSetNeedsDisplay
         topVC.view.alphaValue = 0
         bottomVC.view.addSubview(topVC.view)
         var frame : CGRect = NSRectToCGRect(bottomVC.view.frame)
-        frame = CGRectInset(frame, 40, 40)
+        frame = frame.insetBy(dx: 40, dy: 40)
         topVC.view.frame = NSRectFromCGRect(frame)
-        let color: CGColorRef = NSColor.grayColor().CGColor
+        let color: CGColor = NSColor.gray.cgColor
         topVC.view.layer?.backgroundColor = color
         NSAnimationContext.runAnimationGroup({ (context) -> Void in
             context.duration = 0.5
@@ -33,11 +33,10 @@ class MyCustomSwiftAnimator: NSObject, NSViewControllerPresentationAnimator {
     }
     
     
-    @objc func  animateDismissalOfViewController(viewController: NSViewController, fromViewController: NSViewController) {
-        let bottomVC = fromViewController
+    @objc func  animateDismissal(of viewController: NSViewController, from fromViewController: NSViewController) {
         let topVC = viewController
         topVC.view.wantsLayer = true
-        topVC.view.layerContentsRedrawPolicy = .OnSetNeedsDisplay
+        topVC.view.layerContentsRedrawPolicy = .onSetNeedsDisplay
         
         NSAnimationContext.runAnimationGroup({ (context) -> Void in
             context.duration = 0.5
