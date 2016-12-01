@@ -26,7 +26,7 @@ class MyCustomSwiftAnimator: NSObject, NSViewControllerPresentationAnimator {
         topVC.view.layer?.backgroundColor = color
         NSAnimationContext.runAnimationGroup({ (context) -> Void in
             context.duration = 0.5
-            topVC.view.animator().alphaValue = 1
+            topVC.view.animator().alphaValue = 0.8
 
         }, completionHandler: nil)
         

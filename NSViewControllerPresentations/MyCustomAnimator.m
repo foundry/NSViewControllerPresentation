@@ -39,7 +39,7 @@
     // Do some CoreAnimation stuff to present view
     [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
         context.duration = 0.5;
-        topVC.view.animator.alphaValue = 1;
+        topVC.view.animator.alphaValue = 0.8;
     } completionHandler:nil];
     
 }
