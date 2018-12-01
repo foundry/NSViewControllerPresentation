@@ -12,7 +12,7 @@ import Cocoa
 
 class MyCustomSwiftAnimator: NSObject, NSViewControllerPresentationAnimator {
     
-    @objc func  animatePresentation(of viewController: NSViewController, from fromViewController: NSViewController) {
+    func  animatePresentation(of viewController: NSViewController, from fromViewController: NSViewController) {
         let bottomVC = fromViewController
         let topVC = viewController
         topVC.view.wantsLayer = true
@@ -33,7 +33,7 @@ class MyCustomSwiftAnimator: NSObject, NSViewControllerPresentationAnimator {
     }
     
     
-    @objc func  animateDismissal(of viewController: NSViewController, from fromViewController: NSViewController) {
+    func  animateDismissal(of viewController: NSViewController, from fromViewController: NSViewController) {
         let topVC = viewController
         topVC.view.wantsLayer = true
         topVC.view.layerContentsRedrawPolicy = .onSetNeedsDisplay
